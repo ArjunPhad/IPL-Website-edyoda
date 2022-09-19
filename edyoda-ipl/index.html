@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/6f5013579e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="head-container">
+      <div id="head-right">
+        <img
+          src="https://cdn.storyasset.link/rDoQLC7Q6Ge2nxiqZ1urXiiRSIA3/tata-ipl-logo-indya-talks-sanket-savaliya-removebg-preview-ms-qeladdzjmt.png"
+          alt="logo here" id="logo">
+
+      </div>
+      <div id="head-left">
+
+
+      </div>
+      <a href="./index.html"> <button id="home-button" class="add-button">Home</button></a>
+
+     <a href="./playerDetails.html"></a> <button id="add-player-button" class="add-button">News</button>
+
+      <button id="add-player-button" class="add-button" onclick="addPlayerClicked()">
+        Add Player
+      </button>
+      <button id="add-team-button" class="add-button" onclick="addteamclicked()">
+        Add Team
+      </button>
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Enter team code.. eg -MI">
+        <div class="icon"><i class="fas fa-search"></i></div>
+        <div class="autocom-box">
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div>
+</div>
+
+  <h5 id="slogan">2022 ipl teams</h5>
+  <div id="first-main">
+
+    <div id="container_teams">
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Match point table start  -->
+
+  <div>
+    <BR></BR>
+    <h1><span class="blue"> MATCH-POINT <span class="yellow">TABLE</pan>
+    </h1>
+
+    <table class="container">
+      <thead>
+        <tr>
+          <th>
+            <h1>TEAM</h1>
+          </th>
+          <th>
+            <h1>MATCHES</h1>
+          </th>
+          <th>
+            <h1>WIN</h1>
+          </th>
+          <th>
+            <h1>IPL TROPHY</h1>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr > 
+          <td >MUMBAI INDIANS </td>
+          <td>202</td>
+          <td>150</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>CHENNAI SUPER KINGS</td>
+          <td>180</td>
+          <td>140</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>ROYLE CHALLENGERS BANGLORE</td>
+          <td>190</td>
+          <td>120</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>DELHI CAPITALS</td>
+          <td>154</td>
+          <td>61</td>
+          <td>1</td>
+        </tr>
+        <tr>
+        <tr>
+          <td>RAJSTAN ROYLES</td>
+          <td>202</td>
+          <td>145</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>GUJRAT TITANS</td>
+          <td>45</td>
+          <td>30</td>
+          <td>1</td>
+        </tr>
+        <td>SUNRAISE HYEDRABAD</td>
+        <td>154</td>
+        <td>84</td>
+        <td>2</td>
+        </tr>
+        <tr>
+          <td>KOLKATA KNIGHT RAIDERS</td>
+          <td>123</td>
+          <td>86</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<Div>
+  <div>
+</div>
+  <style media="screen">
+    .footer-body {
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    footer {
+      background-color: #121315;
+      color: #a7a7a7;
+      font-size: 16px;
+    }
+
+    footer * {
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+    }
+
+    .row {
+      padding: 1em 1em;
+    }
+
+    .row.primary {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+      align-items: stretch;
+    }
+
+    .column {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 2em;
+      min-height: 15em;
+    }
+
+    h3 {
+      width: 100%;
+      text-align: left;
+      color: white;
+      font-size: 1.4em;
+      white-space: nowrap;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+
+    li:not(:first-child) {
+      margin-top: 0.8em;
+    }
+
+    ul li a {
+      color: #a7a7a7;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      color: #2a8ded;
+    }
+
+    .about p {
+      text-align: justify;
+      line-height: 2;
+      margin: 0;
+    }
+
+    input,
+    button {
+      font-size: 1em;
+      padding: 1em;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #c7940a;
+      color: #ffffff;
+    }
+
+    div.social {
+      display: flex;
+      justify-content: space-around;
+      font-size: 2.4em;
+      flex-direction: row;
+      margin-top: 0.5em;
+    }
+
+    .social i {
+      color: #bac6d9;
+    }
+
+    .copyright {
+      padding: 0.3em 1em;
+      background-color: #25262e;
+    }
+
+    .footer-menu {
+      float: left;
+    }
+
+    .footer-menu a {
+      color: #cfd2d6;
+      padding: 6px;
+
+      text-decoration: none;
+    }
+
+    .footer-menu a:hover {
+      color: #27bcda;
+    }
+
+    .copyright p {
+      font-size: 0.9em;
+      text-align: right;
+    }
+
+    @media screen and (max-width: 850px) {
+      .row.primary {
+        grid-template-columns: 1fr;
+      }
+
+    }
+  </style>
+  </head>
+
+  <body>
+    <footer class="footer.body">
+      <div class="row primary">
+        <div class="column about">
+          <h3>TATA IPL 2022</h3>
+          <br>
+          <p>
+            From 2022, Tata Group replaces Vivo, a Chinese mobile phone manufacturer,
+            as the title sponsor of the Indian Premier League. The IPL’s affiliation with the Tata Group
+            as title sponsors was addressed at the league’s Governing Council meeting in January.
+            Tata Group took over as the IPL 2022 sponsor till the end of the 2023 edition.
+          </p>
+        
+        </div>
+        <div class="column links">
+          <h3>Important Links</h3>
+          <br>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="About-us.html">About us</a>
+            </li>
+            <li>
+              <a href="addTeam.html">Add Team</a>
+            </li>
+            <li>
+              <a href="addPlayer.html">Add Players</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="column links">
+          <h3>Important Links</h3>
+          <br>
+          <ul>
+            <li>
+              <a href="index.html">Sponsers</a>
+            </li>
+            <li>
+              <a href="top-Performance.html">Brodcast Rights</a>
+            </li>
+            <li>
+              <a href="addTeam.html">Services</a>
+            </li>
+            <li>
+              <a href="addPlayer.html">Terms & Conditions</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>Newsletter</h3>
+          <br>
+          <div>
+            <input type="email" placeholder="Your email id here" />
+            <button>Subscribe</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row copyright">
+        <div class="footer-menu">
+
+          <a href="index.html">Home</a>
+          <a href="About-us.html">About us</a>
+          <a href=" contact-us.html">Contact us </a>
+          <a href="https://www.news18.com/topics/ipl/">News</a>
+          <a href="https://www.facebook.com/IPL/">Social</a>
+
+
+        </div>
+        <p>Copyright &copy; 2022 @Arjun_Phad</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+
+
+  </body>
+
+</html>
